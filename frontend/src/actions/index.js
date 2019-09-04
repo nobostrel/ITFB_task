@@ -1,8 +1,11 @@
-import { sendRequestActionTable, requestSuccessActionTable, requestFailureActionTable, currentPageChangeAction } from './tableData';
+import { 
+    sendRequestAction, 
+    requestSuccessAction, 
+    requestFailureAction
+} from './tableData';
 
 export {
-    sendRequestActionTable,
-    requestSuccessActionTable,
-    requestFailureActionTable,
-    currentPageChangeAction
+    sendRequestAction,
+    requestSuccessAction,
+    requestFailureAction
 }

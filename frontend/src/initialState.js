@@ -1,7 +1,6 @@
 export const initialState = {
-    tableData: {
-        data: [],
-        currentData: [],
+    Data: {
+        photos: [],
         status: null,
         statusText: null,
         requestSent: false

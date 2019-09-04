@@ -1,32 +1,28 @@
-import { SEND_REQUEST_TABLE, REQUEST_SUCCESS_TABLE, REQUEST_FAILURE_TABLE, CURRENT_PAGE_CHANGE } from '../constants/index';
+import { 
+    SEND_REQUEST, 
+    REQUEST_SUCCESS, 
+    REQUEST_FAILURE
+ } from '../constants/index';
 
-export const sendRequestActionTable = url => {
+export const sendRequestAction = url => {
     return {
-        type: SEND_REQUEST_TABLE,
+        type: SEND_REQUEST,
         url: url
     }
 }
 
-export const requestSuccessActionTable = (status, data) => {
+export const requestSuccessAction = (status, data) => {
     return {
-        type: REQUEST_SUCCESS_TABLE,
+        type: REQUEST_SUCCESS,
         status: status,
         data: data
     }
 }
 
-export const requestFailureActionTable = (status, text) => {
+export const requestFailureAction = (status, text) => {
     return {
-        type: REQUEST_FAILURE_TABLE,
+        type: REQUEST_FAILURE,
         status: status,
         text: text
-    }
-}
-
-export const currentPageChangeAction = (newPage, maxDataPerPage) => {
-    return {
-        type: CURRENT_PAGE_CHANGE,
-        newPage: newPage,
-        maxDataPerPage: maxDataPerPage
     }
 }
